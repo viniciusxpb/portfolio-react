@@ -1,0 +1,20 @@
+.SBlock{
+    /* background: var(--block-color-secundary); */
+    background: #334C45;
+    box-shadow: 0 1px 3px 1px #00000026, 0 1px 2px #0000004d;
+    border-radius: 8px;
+    padding: 6px 16px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: .1px;
+    /* color: var(--text-color-primary); */
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}

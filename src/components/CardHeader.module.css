@@ -1,0 +1,66 @@
+.CardHeader{
+    background: var(--block-color);
+    color: var(--text-color-secondary);
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    border-radius: 12px;
+}
+
+.CardHeader__circle{
+    min-width: 40px;
+    height: 40px;
+    max-width: 40px;
+    background-color: var(--button-color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    color: var(--color-surface);
+    font-size: 14px;
+}
+
+.CardHeader__h1{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: .5px;
+    color: var(--text-color-primary);
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+    text-align: left;
+    margin: unset;
+}
+
+.CardHeader__h2{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: .25px;
+    color: var(--text-color-primary);
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    text-align: left;
+    margin: unset;
+}
+
+.CardHeader__h3{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: .4px;
+    color: var(--text-color-primary);
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+    text-align: left;
+    margin: unset;
+}

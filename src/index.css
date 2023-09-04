@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-color);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* mudar */
+.tagWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* mudar */
+.global-CustomGrid1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 24px;
+}
+
+.global-CustomGrid1-box {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+}
+
+
+.globalCustomGrid {
+  display: grid;
+  grid-template-columns: 1fr 5px 1fr;
+  grid-template-rows: auto auto;
+  gap: 0px 108px;
+  /* //onMobile
+  @media (max-width: $width-to-collapse) {
+      grid-template-columns: 1fr;
+  } */
+
+}
+
+.globalCustomGrid__box {
+
+  /* @media (max-width: $width-to-collapse) {
+          width: 100%;
+          max-width: 548px;
+          justify-self: center;
+      } */
+}
+
+.globalCustomGrid__separator {
+  background-color: var(--separator-color-primary);
+  margin-top: 32px;
+  border-radius: 12px;
+  /* //onMobile
+      @media (max-width: $width-to-collapse) {
+          display: none;
+      } */
+}
+
+.globalCustomGrid__marker {
+  height: 16px;
+  position: relative;
+  width: 125px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: -5px;
+
+}
+
+.globalCustomGrid__marker-position1 {
+  top: 130px;
+}
+
+.globalCustomGrid__marker-position2 {
+  top: 250px;
+}
+
+.globalCustomGrid__marker-position3 {
+  top: 430px;
+}
+
+.globalCustomGrid__marker-position4 {
+  top: 785px;
+}
+
+.globalCustomGrid__marker-invert {
+  margin-left: -115px;
+  transform: scaleX(-1);
+}
+
+.globalCustomGrid__triangle {
+  width: 15px;
+  height: 15px;
+  box-shadow: 0px 2px 6px 2px rgba(0, 0, 0, 0.15), 0px 1px 2px 0px rgba(0, 0, 0, 0.3);
+  background-color: var(--block-color);
+  transform: rotate(45deg);
+}
+
+.globalCustomGrid__circle {
+  width: 16px;
+  height: 16px;
+  border-radius: 16px;
+  background-color: var(--separator-marker-color-primary);
+}
+
+
+
+/* mudar */
+.global-horizontalList{
+  display: flex;
+  justify-content: space-around;
+  gap: 24px;
+}
+
+/* mudar */
+.global-horizontalList > *{
+  width: 33%;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}
+
+
+.global-button{
+  background: var(--button-color-primary);
+  border-radius: 100px;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 10px 24px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--text-color-button);
+  border: none;
+}
+
+.global-button:hover{
+
+  /* mudar cor do hover errada */
+  background: var(--button-color-primary-hover);
+  
+}

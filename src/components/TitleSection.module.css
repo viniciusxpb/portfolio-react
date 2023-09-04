@@ -1,0 +1,12 @@
+.TitleSection__title{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 40px;
+    color: var(--text-color-primary);
+    text-align: left;
+}
+
+.TitleSection__body{
+    padding-top: 26px;
+}
