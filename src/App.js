@@ -283,6 +283,11 @@ function App() {
 
               <CardBody>
               {t('questoesAqui-text')}
+
+              <a target='_blank' rel='noopener noreferrer' href="https://www.questoesaqui.com">
+                <button type="submit" className='global-button'>{t("Check out online")}</button>
+              </a>
+              
               </CardBody>
 
             </Card>
@@ -300,6 +305,11 @@ function App() {
 
               <CardBody>
               {t('porfolio-text')}
+
+              <a target='_blank' rel='noopener noreferrer' href="https://github.com/viniciusxpb/portfolio-react">
+                <button type="submit" className='global-button'>{t("Check out online")}</button>
+              </a>
+
               </CardBody>
 
             </Card>
@@ -316,6 +326,11 @@ function App() {
               </CardBody>
               <CardBody>
               {t('credimobi-text')}
+
+              <a target='_blank' rel='noopener noreferrer' href="https://credimobi.com.br">
+                <button type="submit" className='global-button'>{t("Check out online")}</button>
+              </a>
+
               </CardBody>
 
             </Card>
@@ -337,81 +352,3 @@ function App() {
 }
 
 export default App;
-
-
-// components
-// import FirstComponent from './components/FirstComponent';
-// import TemplateExpressions from './components/TemplateExpressions';
-// import MyComponent from './components/MyComponent';
-// import Events from './components/Events';
-
-//images
-
-// import City from "./assets/city.jpg";
-// import ListRender from './components/ListRender';
-// import ManageData from './components/ManageData';
-// import ShowUserName from './components/ShowUserName';
-// import CarDetails from './components/CarDetails';
-
-// function MyComponent2() {
-//   const { t, i18n } = useTranslation();
-//   const toggleLanguage = () => {
-
-//     i18n.changeLanguage('pt');
-//   };
-
-
-//   return <h1>{t('Hello my name is')}<Trans>Hello my name is</Trans><button onClick={toggleLanguage}>Aperta aqui</button></h1>
-// }
-
-  // const name = 'Vance';
-  // const [userName] = useState("Maria");
-
-  // const cars = [
-  //   { id: 1, brand: "Ferrari", color: "Amarela", newCar: true, KM: 0 },
-  //   { id: 2, brand: "KIA", color: "Branco", newCar: false, KM: 34343 },
-  //   { id: 3, brand: "Renault", color: "Azul", newCar: false, KM: 234 },
-  // ]
-
-  // {/* <Card value="teste1">
-  //       <CardHeader>Teste</CardHeader>
-  //       <CardBody>Teste</CardBody>
-  //       <div>
-  //         <SBlock value="teste1" /><SBlock value="teste1" /><SBlock value="teste1" />
-  //       </div>
-  //     </Card> */}
-
-
-  //     {/* <h1>Fundamentos React</h1>
-  //     <FirstComponent />
-  //     <TemplateExpressions />
-  //     <MyComponent />
-  //     <Events /> */}
-
-
-  //     {/* <div>
-  //       <img src='img1.jpg' alt='paisagem' />
-  //     </div>
-  //     <div>
-  //       <img src={City} alt='paisagem' />
-  //     </div> */}
-
-  //     {/* <ManageData /> */}
-
-  //     {/* <ListRender /> */}
-
-  //     {/* <ShowUserName name={userName} /> */}
-
-  //     {/* loop em array de objetos */}
-
-  //     {/* {cars.map((car) => (
-  //       <CarDetails 
-  //       brand={car.brand}
-  //       color={car.color}
-  //       KM={car.KM}
-  //       newCar={car.newCar} 
-  //       />
-  //     ))} */}
-
-
-// styles / CSS
