@@ -6,8 +6,6 @@ Welcome to my React portfolio website project. This project was created to showc
 
 [Link to the website](https://react.vinigator.com/)
 
-![Screenshot of the website](https://br1138.hostgator.com.br:2083/cpsess5159232739/viewer/home2%2fviniga56/screenshot.png)
-
 ## Technologies Used
 
 - React
