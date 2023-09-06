@@ -67,6 +67,8 @@ const Contact = ({t}) => {
 
         console.log(result);
         setLoading(false);
+
+        setPopUp(true);
         //alert(result.status);
     };
 
@@ -115,13 +117,10 @@ const Contact = ({t}) => {
             
 
             <div>
-                {loading && <div class="lds-ring"><div></div><div></div><div></div><div></div></div>}
+                {loading && <div className="lds-ring"><div></div><div></div><div></div><div></div></div>}
             </div>
 
             {popUp && <PopUp t={t} setPopUp={setPopUp}/>}
-
-
-<button onClick={setPopUp}>Clique pra ver algo</button>
 
         </>
 

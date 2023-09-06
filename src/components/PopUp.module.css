@@ -1,42 +1,47 @@
-.during-popup{
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
-    height: 100vw;
-    width: 100vw;
-    position: initial;
-    z-index: 6820;
-    position: fixed;
-    z-index: 10;
-    position: fixed;
-    z-index: 10;
-    left: 0;
-    top: 0;
-  }
-
-  
-
-
-.PopUp{
+.during-popup {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  height: 100vh;
+  width: 100vw;
+  position: initial;
+  z-index: 6820;
   position: fixed;
-  left: 25%;
+  z-index: 10;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+}
+
+.PopUpWrapper {
+  position: fixed;
+  left: 0;
   top: 30%;
-  width: 50%;
-  border-radius: 1em;
-  box-shadow: -2px 5px 5px black;
-  background-color: #FDFFFC;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   color: #011627;
   z-index: 20;
-  padding: 10px;
+}
 
-    
-    
-  }
 
-  .pu-button-container{
-    display: flex;
-    align-self: end;
-    gap: 16px;
-  }
+.PopUp {
+  border-radius: 14px;
+  box-shadow: -2px 5px 5px black;
+  background-color: #FDFFFC;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  margin-left: 8px;
+  margin-right: 8px;
+  gap: 16px;
+}
+
+.pu-button-container {
+  display: flex;
+  align-self: end;
+  gap: 16px;
+}
