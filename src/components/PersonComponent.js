@@ -19,7 +19,7 @@ const Person = ({ children }) => {
 
                 </div>
                 <div className={styles['Person__imgBox']}>
-                    <img src={Vinicius} alt='me' />
+                    <img className={styles['Person__image']} src={Vinicius} alt='me' />
                 </div>
             </div>
         </div>

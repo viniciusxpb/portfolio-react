@@ -10,14 +10,13 @@ const PopUp = props => {
         <div className={styles['during-popup']}></div>
         <div className={styles['PopUp']}>
             {/* x close window */}
-            <button className="popup-x" onClick={()=> setPopUp(false)} >X</button>
             <div className="pu-content-container">
-                <h1>Add more bones?</h1>
+                <h1>{props.t("Thank you!")}</h1>
+                {props.t("Your message has been successfully sent, and we will get in touch as soon as possible.")}
             </div>
             {/* button controls */}
-            <div className="pu-button-container">
-                <button onClick={()=> setPopUp(false)}> MORE BONES! </button>
-                <button onClick={()=> setPopUp(false)}> No, thank you. </button>
+            <div className={styles['pu-button-container']}>
+                <button className="global-button" onClick={()=> setPopUp(false)} >{props.t("Close")}</button>
             </div>
         </div>
         </>

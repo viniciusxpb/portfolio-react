@@ -27,6 +27,13 @@ code {
   column-gap: 24px;
 }
 
+@media (max-width: var(--width-to-collapse)) {
+  .global-CustomGrid1 {
+    grid-template-columns: 1fr;
+  }
+  
+}
+
 .global-CustomGrid1-box {
   grid-row-start: 1;
   grid-row-end: 3;

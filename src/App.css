@@ -3,6 +3,10 @@
   src: url('assets/fonts/Source_Code_Pro/static/SourceCodePro-Regular.ttf');
 }
 
+:root{
+  --width-to-collapse: 1050px;
+}
+
 :root .light {
   --primary-color: #191C1B;
   --background-color: #000000;

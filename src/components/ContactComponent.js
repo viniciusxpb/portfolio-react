@@ -16,11 +16,6 @@ const Contact = ({t}) => {
    // controls if popup displays
    const [popUp, setPopUp] = useState(false)
 
-   // adds class to darken background color
-   const duringPopUp = popUp ? " during-popup" : ""
-
-
-
     //const [status, setStatus] = useState("Submit");
     //const { data: items, httpConfig, loading } = useFetch(url);
 
@@ -69,6 +64,8 @@ const Contact = ({t}) => {
         });
         //setStatus("Submit");
         let result = await response.json();
+
+        console.log(result);
         setLoading(false);
         //alert(result.status);
     };
@@ -121,7 +118,7 @@ const Contact = ({t}) => {
                 {loading && <div class="lds-ring"><div></div><div></div><div></div><div></div></div>}
             </div>
 
-            {popUp && <PopUp setPopUp={setPopUp}/>}
+            {popUp && <PopUp t={t} setPopUp={setPopUp}/>}
 
 
 <button onClick={setPopUp}>Clique pra ver algo</button>

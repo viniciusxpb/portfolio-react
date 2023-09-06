@@ -2,7 +2,7 @@ import styles from './GlobalWrapper.module.css'
 
 const GlobalWrapper = ({children,background}) => {
 
-    if(background=='strong'){
+    if(background==='strong'){
         return (
             <div className={styles['GlobalWrapper']}>
                 <div className={styles['GlobalWrapper__wrapper']}>
