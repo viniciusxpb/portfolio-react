@@ -58,7 +58,7 @@ function App() {
       <Header toggleTheme={toggleTheme} toggleLanguage={toggleLanguage} />
 
       <GlobalWrapper>
-        <Person />
+      <Person />
       </GlobalWrapper>
 
       <GlobalWrapper background="strong">

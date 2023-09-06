@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import styles from './Contact.module.css'
+import PopUp from './PopUpComponent';
 
 //import { useState, useEffect } from 'react';
 
@@ -10,6 +11,15 @@ const url = "https://api.viniciusfranca.com.br/index.php?graphql";
 const contactEmail = "viniciusxpb@gmail.com";
 
 const Contact = ({t}) => {
+
+    
+   // controls if popup displays
+   const [popUp, setPopUp] = useState(false)
+
+   // adds class to darken background color
+   const duringPopUp = popUp ? " during-popup" : ""
+
+
 
     //const [status, setStatus] = useState("Submit");
     //const { data: items, httpConfig, loading } = useFetch(url);
@@ -110,6 +120,11 @@ const Contact = ({t}) => {
             <div>
                 {loading && <div class="lds-ring"><div></div><div></div><div></div><div></div></div>}
             </div>
+
+            {popUp && <PopUp setPopUp={setPopUp}/>}
+
+
+<button onClick={setPopUp}>Clique pra ver algo</button>
 
         </>
 
