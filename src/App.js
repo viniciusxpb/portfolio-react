@@ -18,6 +18,7 @@ import QuestoesAqui from "./assets/images/questoesAqui.png";
 import Portfolio from "./assets/images/portfolio.png";
 import Credimobi from "./assets/images/credimobi.png";
 import Contact from './components/ContactComponent';
+import CardFooter from './components/CardFooterComponent';
 
 
 
@@ -58,7 +59,7 @@ function App() {
       <Header toggleTheme={toggleTheme} toggleLanguage={toggleLanguage} />
 
       <GlobalWrapper>
-      <Person />
+        <Person />
       </GlobalWrapper>
 
       <GlobalWrapper background="strong">
@@ -279,16 +280,18 @@ function App() {
 
               <CardBody>
                 <img style={{ maxWidth: 250 }} src={QuestoesAqui} alt='me' />
+
+                {t('questoesAqui-text')}
+
+
+
               </CardBody>
 
-              <CardBody>
-              {t('questoesAqui-text')}
-
-              <a target='_blank' rel='noopener noreferrer' href="https://www.questoesaqui.com">
-                <button type="submit" className='global-button'>{t("Check out online")}</button>
-              </a>
-              
-              </CardBody>
+              <CardFooter>
+                <a target='_blank' rel='noopener noreferrer' href="https://www.questoesaqui.com">
+                  <button type="submit" className='global-button'>{t("Check out online")}</button>
+                </a>
+              </CardFooter>
 
             </Card>
 
@@ -300,17 +303,20 @@ function App() {
               />
 
               <CardBody>
-              <img style={{ maxWidth: 250 }} src={Portfolio} alt='me' />
-              </CardBody>
+                <img style={{ maxWidth: 250 }} src={Portfolio} alt='me' />
 
-              <CardBody>
-              {t('porfolio-text')}
+                {t('porfolio-text')}
 
-              <a target='_blank' rel='noopener noreferrer' href="https://github.com/viniciusxpb/portfolio-react">
-                <button type="submit" className='global-button'>{t("Check out online")}</button>
-              </a>
+
 
               </CardBody>
+
+
+              <CardFooter>
+                <a target='_blank' rel='noopener noreferrer' href="https://github.com/viniciusxpb/portfolio-react">
+                  <button type="submit" className='global-button'>{t("Check out online")}</button>
+                </a>
+              </CardFooter>
 
             </Card>
 
@@ -322,16 +328,16 @@ function App() {
               />
 
               <CardBody>
-              <img style={{ maxWidth: 250 }} src={Credimobi} alt='me' />
-              </CardBody>
-              <CardBody>
-              {t('credimobi-text')}
+                <img style={{ maxWidth: 250 }} src={Credimobi} alt='me' />
 
-              <a target='_blank' rel='noopener noreferrer' href="https://credimobi.com.br">
-                <button type="submit" className='global-button'>{t("Check out online")}</button>
-              </a>
-
+                {t('credimobi-text')}
               </CardBody>
+
+              <CardFooter>
+                <a target='_blank' rel='noopener noreferrer' href="https://credimobi.com.br">
+                  <button type="submit" className='global-button'>{t("Check out online")}</button>
+                </a>
+              </CardFooter>
 
             </Card>
           </div>
@@ -340,12 +346,12 @@ function App() {
 
       <GlobalWrapper background="strong">
         <TitleSection title={t('Contact')}>
-            <Contact t={t} />
+          <Contact t={t} />
         </TitleSection>
       </GlobalWrapper>
       <Footer />
 
-      
+
 
     </div>
   );

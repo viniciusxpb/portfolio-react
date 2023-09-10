@@ -3,9 +3,9 @@
     color: var(--text-color-primary);
     display: flex;
     gap: 8px;
-    align-items: center;
     flex-flow: wrap;
     border-radius: 12px;
+    flex-grow: 1;
 }
 
 .CardBody__circle{

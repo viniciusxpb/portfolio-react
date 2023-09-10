@@ -1,0 +1,8 @@
+.CardFooter{
+    background: var(--block-color);
+    color: var(--text-color-secondary);
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    border-radius: 12px;
+}

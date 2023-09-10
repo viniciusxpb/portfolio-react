@@ -7,6 +7,10 @@
     width: 100%;
 }
 
+.Person__ButtonWrapper{
+    margin-top: 16px;
+}
+
 .Person__content{
     display: flex;
     justify-content: space-between;

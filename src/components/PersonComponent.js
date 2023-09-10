@@ -17,9 +17,11 @@ const Person = ({ children }) => {
                         <Trans>Introduction</Trans>
                     </div>
 
-                    <a target='_blank' rel='noopener noreferrer' href="https://wa.me/5534991315726">
-                        <button type="submit" className='global-button'><Trans>Let's talk</Trans></button>
-                    </a>
+                    <div className={styles['Person__ButtonWrapper']}>
+                        <a target='_blank' rel='noopener noreferrer' href="https://wa.me/5534991315726">
+                            <button type="submit" className='global-button'><Trans>Let's talk</Trans></button>
+                        </a>
+                    </div>
 
                 </div>
                 <div className={styles['Person__imgBox']}>
