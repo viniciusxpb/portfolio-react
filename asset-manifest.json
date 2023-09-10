@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-react/static/css/main.5e45f010.css",
-    "main.js": "/portfolio-react/static/js/main.df7e7742.js",
+    "main.css": "/portfolio-react/static/css/main.86302bbe.css",
+    "main.js": "/portfolio-react/static/js/main.090eb781.js",
     "static/js/787.aeca62f9.chunk.js": "/portfolio-react/static/js/787.aeca62f9.chunk.js",
     "static/media/portfolio.png": "/portfolio-react/static/media/portfolio.d7875f2a36cc6a41d982.png",
     "static/media/vinicius.png": "/portfolio-react/static/media/vinicius.891d52a1dd9804d95ca1.png",
@@ -10,12 +10,12 @@
     "static/media/credimobi.png": "/portfolio-react/static/media/credimobi.1b0db45fa625660a1298.png",
     "index.html": "/portfolio-react/index.html",
     "static/media/getFetch.cjs": "/portfolio-react/static/media/getFetch.40f37ddea2378391108f.cjs",
-    "main.5e45f010.css.map": "/portfolio-react/static/css/main.5e45f010.css.map",
-    "main.df7e7742.js.map": "/portfolio-react/static/js/main.df7e7742.js.map",
+    "main.86302bbe.css.map": "/portfolio-react/static/css/main.86302bbe.css.map",
+    "main.090eb781.js.map": "/portfolio-react/static/js/main.090eb781.js.map",
     "787.aeca62f9.chunk.js.map": "/portfolio-react/static/js/787.aeca62f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5e45f010.css",
-    "static/js/main.df7e7742.js"
+    "static/css/main.86302bbe.css",
+    "static/js/main.090eb781.js"
   ]
 }
