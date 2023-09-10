@@ -28,7 +28,7 @@ function App() {
     localStorage.getItem('theme') || 'light'
   );
 
-  const toggleTheme = () => {
+  const toggleTheme = (value) => {
     if (theme === 'light') {
       setTheme('dark');
     } else {
@@ -42,21 +42,45 @@ function App() {
 
   //Translations
   const { t, i18n } = useTranslation();
-  const toggleLanguage = () => {
-    const language = localStorage.getItem('language') || 'en'
-    if (language === 'pt') {
-      i18n.changeLanguage('en');
-      localStorage.setItem('language', 'en');
-    } else {
-      i18n.changeLanguage('pt');
-      localStorage.setItem('language', 'pt');
-    }
+  const languageConfig  = {
+    "defaultLanguage":"pt",
+    "languages": [
+        {
+            "name": "Português",
+            "symbol": "pt",
+        }, 
+        {
+          "name": "English",
+          "symbol": "en",
+      },
+    ]
+  }
+
+  const [globalLanguage, setLanguage] = useState(
+    localStorage.getItem('language') || languageConfig.defaultLanguage
+  );
+
+  const toggleLanguage = (value) => {
+    setLanguage(value);
+    // const language = localStorage.getItem('language') || languageConfig.defaultLanguage;
+    // if (language === 'pt') {
+    //   i18n.changeLanguage('en');
+    //   localStorage.setItem('language', 'en');
+    // } else {
+    //   i18n.changeLanguage('pt');
+    //   localStorage.setItem('language', 'pt');
+    // }
   };
+  useEffect(() => {
+    localStorage.setItem('globalLanguage', globalLanguage);
+    i18n.changeLanguage(globalLanguage);
+    localStorage.setItem('language', globalLanguage);
+  }, [globalLanguage]);
 
   return (
     <div className={`App ${theme}`}>
 
-      <Header toggleTheme={toggleTheme} toggleLanguage={toggleLanguage} />
+      <Header toggleTheme={toggleTheme} toggleLanguage={toggleLanguage} locales = {languageConfig} selectedL = {globalLanguage}/>
 
       <GlobalWrapper>
         <Person />

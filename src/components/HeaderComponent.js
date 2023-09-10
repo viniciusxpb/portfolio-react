@@ -1,8 +1,21 @@
 import styles from './Header.module.css'
+import { useState,useEffect } from 'react';
 
 const Header = (props) => {
 
+    const [selectedFruit, setSelectedFruit] = useState('pt');
 
+    const changedSelect = (value) => {
+
+        setSelectedFruit(value);
+        props.toggleLanguage(value);
+      };
+
+      useEffect(() => {
+        setSelectedFruit(props.selectedL);
+      }, []);
+
+      
 
     return (
         <>
@@ -16,6 +29,14 @@ const Header = (props) => {
 
                     <svg onClick={() => props.toggleLanguage()} width="20" height="20" viewBox="0 0 20 20" fill="inherit" xmlns="http://www.w3.org/2000/svg"><path _ngcontent-ng-c4264086591="" d="M18 0H2C0.9 0 0 0.9 0 2V20L4 16H18C19.1 16 20 15.1 20 14V2C20 0.9 19.1 0 18 0ZM18 14H4L2 16V2H18V14Z" fill="inherit"></path></svg>
 
+                </div>
+
+                <div>
+                <select value={selectedFruit} onChange={e => changedSelect(e.target.value)}>
+                    {props.locales.languages.map(item => (
+                        <option value={item.symbol}>{item.name}</option>
+                    ))}
+                </select>
                 </div>
             </div>
         </div>
