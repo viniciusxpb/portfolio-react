@@ -28,6 +28,16 @@
     align-items: center;
 }
 
+.Header__languageSelect{
+    width: 200px;
+    border: 1px solid;
+    border-color: var(--sys-outline);
+    padding: 8px;
+    background-color: var(--color-surface);
+    color: var(--text-color-primary);
+    border-radius: 20px;
+}
+
 .Header_adjuster{
     height: 66px;
 }
